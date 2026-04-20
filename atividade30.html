@@ -6,57 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1> Atividadde 26 </h1>
-    
     <script> 
- const matriz1 = []; 
-    for (let i = 0; i < 2; i++) {
+    
+const matriz1 = [];
+let soma1 = 0;
+
+for (let i = 0; i < 2; i++) {
   matriz1[i] = [];
   for (let j = 0; j < 2; j++) {
-    matriz1[i][j] = parseInt(prompt("Digite o elemento da matriz um[" + i + "][" + j + "]:"));
+    matriz1[i][j] = parseInt(prompt(`Digite o elemento da matriz 1 [${i}][${j}]:`));
   }
-} 
+}
+
 for (let i = 0; i < 2; i++) {
   let linha1 = "";
   for (let j = 0; j < 2; j++) {
     linha1 += matriz1[i][j] + "  ";
-
+    soma1 += matriz1[i][j];
   }
   console.log(linha1);
 }
 
-const matriz2 = []
+const matriz2 = [];
+let soma2 = 0;
+
 for (let i = 0; i < 2; i++) {
   matriz2[i] = [];
   for (let j = 0; j < 2; j++) {
-    matriz2[i][j] = parseInt(prompt("Digite o elemento da matriz dois[" + i + "][" + j + "]:"));
+    matriz2[i][j] = parseInt(prompt(`Digite o elemento da matriz 2 [${i}][${j}]:`));
   }
-} 
+}
+
 for (let i = 0; i < 2; i++) {
   let linha2 = "";
   for (let j = 0; j < 2; j++) {
     linha2 += matriz2[i][j] + "  ";
-
+    soma2 += matriz2[i][j];
   }
   console.log(linha2);
 }
 
-    let iguais = true
-
-for (let i = 0; i < 2; i++) {
-  for (let j = 0; j < 2; j++) {
-    if (matriz1[i][j] != matriz2[i][j]) 
-    { 
-      iguais = false;
-    }
-  }
-}
-if (iguais) {
-  console.log("As matrizes são iguais");
-} else {
-  console.log("As matrizes são diferentes");
-}
+let somaTotal = soma1 - soma2;
+console.log("Subtração total: " + somaTotal);
 
     </script>
 </body>

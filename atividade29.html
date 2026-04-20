@@ -6,12 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Atividade 29 </h1>
 
-    <h1> Atividade 27 </h1>
-    
     <script> 
-const matriz = [];
-let soma = 0;
+
+const matriz = []; 
 
 for (let i = 0; i < 3; i++) {
   matriz[i] = [];
@@ -28,11 +27,25 @@ for (let i = 0; i < 3; i++) {
   console.log(linha);
 }
 
+let identidade = true;
+
 for (let i = 0; i < 3; i++) {
-  soma += matriz[i][2 - i];
+  for (let j = 0; j < 3; j++) {
+    if (i === j && matriz[i][j] !== 1) {
+      identidade = false;
+    }
+    if (i !== j && matriz[i][j] !== 0) {
+      identidade = false;
+    }
+  }
 }
 
-console.log("Soma diagonal: " + soma);
+if (identidade) {
+  console.log("Esta é uma matriz identidade");
+} else {
+  console.log("Esta não é uma matriz identidade");
+}
+
     </script>
 </body>
 </html>
