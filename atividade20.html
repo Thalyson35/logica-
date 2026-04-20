@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Atividade 20 </h1>
+
+    <script>
+        const matriz = []; 
+    for (let i = 0; i < 3; i++) {
+  matriz[i] = [];
+  for (let j = 0; j < 3; j++) {
+    matriz[i][j] = parseInt(prompt("Digite o elemento [" + i + "][" + j + "]:"));
+  }
+}
+ 
+for (let i = 0; i < 3; i++) {
+  let linha = "";
+  for (let j = 0; j < 3; j++) {
+    linha += matriz[i][j] + "  ";
+  }
+  console.log(linha);
+}
+
+   let maior = matriz[0][0];         // começa pelo primeiro elemento
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {  // dois for para visitar tudo
+    if (matriz[i][j] > maior) {
+      maior = matriz[i][j];       // atualiza se achar um maior
+    }
+  }
+}
+
+  console.log(maior);
+    </script>
+</body>
+</html>

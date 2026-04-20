@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercício 9 </h1>
+
+    <script> 
+      let positivo = 0;
+      let negativo = 0;
+      let meuVetor = [];
+      for (let i = 0; i <= 9; i++) {
+        meuVetor[i] = parseInt(prompt("Digite 10 numeros inteiros: "));
+        if (meuVetor[i] > 0) {
+          positivo++;
+        } else if (meuVetor[i] < 0) {
+          negativo++;
+        }
+      }
+      console.log("Os numeros positivos são: " + positivo);
+      console.log("Os numeros negativos são: " + negativo);
+    </script>
+</body>
+</html>

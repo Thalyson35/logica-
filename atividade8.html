@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercício 8 </h1>
+
+    <script> 
+        let numero = []
+        let pares = 0
+        let impares = 0
+        let somap = 0
+        let somai = 0
+        let mediap = 0
+        let mediai = 0
+        for(let i = 0; i<5; i++){
+            numero[i] = parseInt(prompt("Digite um número"))
+            if(numero[i] %2 == 0){
+                somap+= numero[i]
+                pares++
+            }else{
+                somai+= numero[i]
+                impares++
+            }
+            mediap=somap/pares
+            mediai=somai/impares
+        }
+        console.log("Média dos números pares: "+ mediap + "\nMédia dos números impares: "+mediai)
+    </script>
+</body>
+</html>

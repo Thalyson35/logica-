@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Exercíco 6 </h1>
+
+    <script> 
+let numeros = [];
+
+// Leitura dos 10 números
+for (let i = 0; i < 10; i++) {
+    let num = parseInt(prompt(`Digite o ${i + 1}º número:`));
+    numeros.push(num);
+}
+
+// Ordenação em ordem crescente
+numeros.sort((a, b) => a - b);
+
+// Exibição no console
+console.log("Números em ordem crescente:");
+for (let n of numeros) {
+    console.log(n);
+}
+
+    </script>
+</body>
+</html>

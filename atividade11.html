@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Atividade 11 </h1>
+    
+    <script> 
+let somaPositivos = 0;
+let somaNegativos = 0;
+let meuVetor = [];
+
+for (let i = 0; i <= 9; i++) {
+  meuVetor[i] = parseInt(prompt("Digite 10 números inteiros: "));
+  
+  if (meuVetor[i] > 0) {
+    somaPositivos += meuVetor[i]; // soma os positivos
+  } else if (meuVetor[i] < 0) {
+    somaNegativos += meuVetor[i]; // soma os negativos
+  }
+}
+
+console.log("Soma dos números positivos: " + somaPositivos);
+console.log("Soma dos números negativos: " + somaNegativos);
+    </script>
+</body>
+</html>
